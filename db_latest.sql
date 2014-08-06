@@ -414,6 +414,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `is_personaname_real` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`account_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `users` (`account_id`, `avatar`, `profileurl`) VALUES (4294967295, '', '');
 
 CREATE TABLE IF NOT EXISTS `teams` (
   `id` INT(11) UNSIGNED NOT NULL DEFAULT '0',
