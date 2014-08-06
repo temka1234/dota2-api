@@ -91,6 +91,7 @@ print_r($match->get_slot(0)->get_data_array());
 require_once ('config.php');
 $matches_mapper_web = new matches_mapper_web();
 $matches_mapper_web->set_account_id(93712171);
+$matches_mapper_web->set_matches_requested(25);
 $matches_short_info = $matches_mapper_web->load();
 foreach ($matches_short_info AS $key=>$match_short_info) {
     $match_mapper = new match_mapper_web($key);
