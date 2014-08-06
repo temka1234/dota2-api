@@ -305,7 +305,6 @@ class db{
             }
             $q = rtrim($q, ',');
         }
-        echo $q;
         try
         {
             $this->_query_id = self::$_link_id->prepare($q);
